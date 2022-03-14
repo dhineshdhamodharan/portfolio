@@ -18,12 +18,12 @@ function ResumeNew() {
   return (
     <div>
       <Container fluid className="resume-section">
-        <Row className="resume">
+        {/* <Row className="resume">
           <Document file={pdf}>
             <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
             <Page pageNumber={2} scale={width > 786 ? 1.7 : 0.6} />
           </Document>
-        </Row>
+        </Row> */}
 
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button
@@ -33,7 +33,7 @@ function ResumeNew() {
             className="download-button"
           >
             <AiOutlineDownload />
-            &nbsp;Download CV
+            &nbsp;View Resume
           </Button>
         </Row>
       </Container>

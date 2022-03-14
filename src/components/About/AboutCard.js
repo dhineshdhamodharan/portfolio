@@ -1,6 +1,11 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import { ImPointRight } from "react-icons/im";
+import Button from "react-bootstrap/Button";
+// import Particle from "../Particle";
+import pdf from "../../Assets/Resume.pdf";
+import { AiOutlineDownload } from "react-icons/ai";
+import { Container, Row } from "react-bootstrap";
 function AboutCard() {
   return (
     <Card className="quote-card-view">
@@ -30,6 +35,17 @@ function AboutCard() {
             </li>
           </ul>
         </blockquote>
+        <div style={{ justifyContent: "center", paddingLeft: "200px" }}>
+          <Button
+            variant="primary"
+            href={pdf}
+            target="_blank"
+            className="download-button"
+          >
+            <AiOutlineDownload />
+            &nbsp;View Resume
+          </Button>
+        </div>
       </Card.Body>
     </Card>
   );
