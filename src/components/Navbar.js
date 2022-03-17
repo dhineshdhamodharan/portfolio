@@ -3,20 +3,12 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import { Link } from "react-router-dom";
-import { ImBlog } from "react-icons/im";
-import Button from "react-bootstrap/Button";
-// import Particle from "../Particle";
-import pdf from "../Assets/Resume.pdf";
-import { AiOutlineDownload } from "react-icons/ai";
+
 import {
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from "react-icons/ai";
-
-import { MdDeveloperMode } from "react-icons/md";
-
-import { CgFileDocument } from "react-icons/cg";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);

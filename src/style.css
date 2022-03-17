@@ -326,7 +326,7 @@ html {
 
 .home-about-section {
   position: relative;
-  padding-bottom: 70px !important;
+  padding-bottom: 200px !important;
 }
 
 .home-about-description {
@@ -419,6 +419,7 @@ html {
 .footer-copywright {
   text-align: center !important;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .footer-body {
@@ -776,6 +777,7 @@ html {
 }
 .download-button {
   background-color: #343e47 !important;
+  margin: 10px;
 }
 
 .download-button:hover {
@@ -789,8 +791,7 @@ html {
   font-weight: bold;
 }
 .profile-pic {
-  border-radius: 50%;
-  height: 70%;
+  height: 100%;
   width: 65%;
   margin-top: 12%;
   margin-left: 25%;
@@ -798,7 +799,6 @@ html {
 
 @media (max-width: 767px) {
   .profile-pic {
-    border-radius: 50%;
     height: 80%;
     width: 50%;
     margin-top: 12%;
