@@ -38,7 +38,9 @@ function AboutCard() {
         <div style={{ justifyContent: "center", paddingLeft: "200px" }}>
           <Button
             variant="primary"
-            href={pdf}
+            href={
+              "https://drive.google.com/file/d/1Z-CfznaOcZHHaasU-MVi_oaEf8qXJFE-/view?usp=sharing"
+            }
             target="_blank"
             className="download-button"
           >

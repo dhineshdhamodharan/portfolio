@@ -15,19 +15,21 @@ function Projects() {
         </p>
 
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-          {PROJECTS.map((project, index) => (
-            <Col md={7} className="project-card" key={index}>
-              <ProjectCard
-                imgPath={project.image}
-                technologyUsed={project.technologyUsed}
-                isBlog={false}
-                title={project.name}
-                description={project.description}
-                link={project.url}
-                git={project.git}
-              />
-            </Col>
-          ))}
+          <div class="card-deck">
+            {PROJECTS.map((project, index) => (
+              <Col md={6} className="project-card" key={index}>
+                <ProjectCard
+                  imgPath={project.image}
+                  technologyUsed={project.technologyUsed}
+                  isBlog={false}
+                  title={project.name}
+                  description={project.description}
+                  link={project.url}
+                  git={project.git}
+                />
+              </Col>
+            ))}
+          </div>
         </Row>
       </Container>
     </Container>

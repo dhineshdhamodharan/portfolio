@@ -19,7 +19,7 @@ function Home() {
               </h1>
 
               <h1 className="heading-name">
-                I'M
+                I'm
                 <strong className="main-name"> Dhinesh</strong>
               </h1>
 
@@ -34,7 +34,7 @@ function Home() {
           </Row>
         </Container>
       </Container>
-      <Container fluid className="home-about-section" id="about">
+      {/* <Container fluid className="home-about-section" id="about">
         <Container>
           <Row>
             <Col md={12} className="home-about-social">
@@ -50,7 +50,7 @@ function Home() {
             </Col>
           </Row>
         </Container>
-      </Container>
+      </Container> */}
     </section>
   );
 }
