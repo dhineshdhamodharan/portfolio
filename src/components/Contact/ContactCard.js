@@ -47,57 +47,60 @@ function ContactCard() {
             <SocialMedia />
           </Row>
         </Container>
+        <Container>
+          <Row className="contact">
+            <div className="container" id="Contact">
+              <form onSubmit={handleSubmit} className="form">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="Name"
+                    placeholder="Name"
+                    onChange={(e) => {
+                      setName(e.target.value);
+                    }}
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Email"
+                    onChange={(e) => {
+                      setMail(e.target.value);
+                    }}
+                    required
+                  />
+                </div>
 
-        <div className="container" id="Contact">
-          <form onSubmit={handleSubmit} className="form">
-            <div class="form-group">
-              <input
-                type="text"
-                class="form-control"
-                id="Name"
-                placeholder="Name"
-                onChange={(e) => {
-                  setName(e.target.value);
-                }}
-                required
-              />
+                <div class="form-group">
+                  <textarea
+                    class="form-control"
+                    rows="5"
+                    placeholder="Enter your message"
+                    onChange={(e) => {
+                      setMessage(e.target.value);
+                    }}
+                  ></textarea>
+                </div>
+                <div class="form-group">
+                  <Button
+                    type="submit"
+                    class=" btn1 btn-primary"
+                    disabled={serverState}
+                    className="download-button"
+                  >
+                    &nbsp;Send message
+                  </Button>
+                </div>
+                {serverState ? <p>Message Sent Successfully</p> : ""}
+              </form>
             </div>
-            <div class="form-group">
-              <input
-                type="email"
-                class="form-control"
-                id="email"
-                placeholder="Email"
-                onChange={(e) => {
-                  setMail(e.target.value);
-                }}
-                required
-              />
-            </div>
-
-            <div class="form-group">
-              <textarea
-                class="form-control"
-                rows="5"
-                placeholder="Enter your message"
-                onChange={(e) => {
-                  setMessage(e.target.value);
-                }}
-              ></textarea>
-            </div>
-            <div class="form-group">
-              <Button
-                type="submit"
-                class=" btn1 btn-primary"
-                disabled={serverState}
-                className="download-button"
-              >
-                &nbsp;Send message
-              </Button>
-            </div>
-            {serverState ? <p>Message Sent Successfully</p> : ""}
-          </form>
-        </div>
+          </Row>
+        </Container>
       </Container>
     </section>
   );
