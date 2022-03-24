@@ -776,7 +776,7 @@ html {
 }
 .download-button {
   background-color: #343e47 !important;
-  margin-left: 10px;
+  margin: 10px;
 }
 
 .download-button:hover {
